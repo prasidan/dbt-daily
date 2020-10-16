@@ -5,7 +5,7 @@ with source  as (
 renamed as (
     select 
         to_date(date, 'YYYY-MM-DD') as date_day
-        ,listing_id
+        ,listing_id as listing_sfo
 
     from source
     --group by date_day

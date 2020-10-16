@@ -6,7 +6,7 @@ with airbnb as (
 final as (
     select 
         date_day
-        ,count(listing_id) as reviews_daily
+        ,count(listing_aus) as total_listings_aus
         --use case when to add AUS column
         --this data is daily, so aggregate by month
         --sum reviews by month from airbnb
